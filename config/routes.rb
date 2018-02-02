@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get :example, to: 'main#example'
+  post :view, to: 'main#view'
+  root 'main#index'
 end

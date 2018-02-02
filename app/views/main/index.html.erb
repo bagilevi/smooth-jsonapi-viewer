@@ -1,0 +1,12 @@
+<p>
+  Paste jour JSON here:
+</p>
+
+<%= form_tag('/view') do %>
+  <div>
+    <textarea cols="100" rows="40" name="payload"></textarea>
+  </div>
+  <div>
+    <input type="submit" />
+  </div>
+<% end %>

@@ -1,0 +1,42 @@
+<div class="entity" style="background: #<%= Digest::SHA1.hexdigest(entity.type)[0..5] %>">
+  <div class="entity-contents">
+    <div class="entity-contents-inner">
+      <div class="entity-header">
+        <div class="entity-type"><%= entity.type %></div>
+        <div class="entity-id">
+          <% if entity.self_link.present? %>
+            <%= link_to entity.id, entity.self_link %>
+          <% else %>
+            <%= entity.id %>
+          <% end %>
+        </div>
+      </div>
+      <div class="entity-links">
+        <%= render partial: 'links', object: entity.links %>
+      </div>
+      <% unless @rendered_entities.include?(entity.full_key) %>
+        <% @rendered_entities << entity.full_key %>
+        <div class="entity-attributes">
+          <% entity.attributes.each do |key, value| %>
+            <div class="entity-attribute">
+              <div class="entity-attribute-name"><%= key %></div>
+              <div class="entity-attribute-value"><%= value.is_a?(Array) || value.is_a?(Hash) ? JSON.generate(value) : value %></div>
+            </div>
+          <% end %>
+        </div>
+        <div class="entity-relationships">
+          <% entity.relationships.each do |key, value| %>
+            <div class="entity-relationship">
+              <div class="entity-relationship-name"><%= key %></div>
+              <div class="entity-relationship-value">
+                <% Array(value).each do |child_entity| %>
+                  <%= render partial: 'entity', object: child_entity %>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

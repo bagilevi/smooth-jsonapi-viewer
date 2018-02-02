@@ -1,0 +1,69 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eee;
+}
+.entity {
+  margin: 2px;
+  border: solid 2px white;
+}
+.entity-contents {
+  padding: 0px;
+  background: rgba(127, 127, 127, 0.4)
+}
+.entity-contents-inner {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2px 6px;
+}
+.entity-header > * {
+  display: inline-block;
+}
+.entity-id {
+  font-family: monospace;
+}
+.entity-id > a {
+  text-decoration: none;
+}
+.entity-type {
+  color: #666;
+  font-size: smaller;
+  font-style: italic;
+}
+.entity-attributes {
+  margin-top: .5em;
+}
+.entity-attribute > * {
+  display: inline-block;
+}
+.entity-attribute-name {
+  color: #666;
+  font-size: smaller;
+  font-weight: 500;
+  vertical-align: baseline;
+  min-width: 10em;
+}
+.entity-attribute-name::after {
+  content: ':'
+}
+
+.entity-relationship > * {
+  display: inline-block;
+}
+.entity-relationship-name {
+  color: #666;
+  font-size: smaller;
+  font-weight: 500;
+  vertical-align: top;
+  padding-top: .5em;
+  min-width: 10em;
+}
+.entity-relationship-name::after {
+  content: ':'
+}
+
+.entity-links {
+  font-size: smaller;
+}

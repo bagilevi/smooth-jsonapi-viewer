@@ -1,0 +1,5 @@
+<% @rendered_entities = Set.new %>
+<div class="entity-links">
+  <%= render partial: 'links', object: @document.links %>
+</div>
+<%= render partial: 'entity', collection: @document.entities %>
