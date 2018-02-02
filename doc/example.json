@@ -1,0 +1,182 @@
+{
+  "data": [
+    {
+      "type": "city",
+      "id": "Q84",
+      "attributes": {
+        "name": "London",
+        "population": 8787892
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "type": "country",
+            "id": "Q145"
+          }
+        },
+        "sister-cities": {
+          "data": [
+            {
+              "type": "city",
+              "id": "Q64"
+            },
+            {
+              "type": "city",
+              "id": "Q1156"
+            },
+            {
+              "type": "city",
+              "id": "Q60"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "country",
+      "id": "Q145",
+      "attributes": {
+        "name": "United Kingdom",
+        "population": 63181775
+      },
+      "relationships": {
+        "capital": {
+          "data": {
+            "type": "city",
+            "id": "Q84"
+          }
+        }
+      }
+    },
+    {
+      "type": "city",
+      "id": "Q64",
+      "attributes": {
+        "name": "Berlin",
+        "population": 3490105
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "type": "country",
+            "id": "Q183"
+          }
+        }
+      }
+    },
+    {
+      "type": "city",
+      "id": "Q1156",
+      "attributes": {
+        "name": "Mumbai",
+        "population": 12442373
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "type": "country",
+            "id": "Q668"
+          }
+        }
+      }
+    },
+    {
+      "type": "city",
+      "id": "Q60",
+      "attributes": {
+        "name": "New York City",
+        "population": 8405837
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "type": "country",
+            "id": "Q30"
+          }
+        }
+      }
+    },
+    {
+      "type": "country",
+      "id": "Q183",
+      "attributes": {
+        "name": "Germany",
+        "population": 80500000
+      },
+      "relationships": {
+        "capital": {
+          "data": {
+            "type": "city",
+            "id": "Q64"
+          }
+        }
+      }
+    },
+    {
+      "type": "country",
+      "id": "Q668",
+      "attributes": {
+        "name": "India",
+        "population": 1263200000
+      },
+      "relationships": {
+        "capital": {
+          "data": {
+            "type": "city",
+            "id": "Q987"
+          }
+        }
+      }
+    },
+    {
+      "type": "city",
+      "id": "Q987",
+      "attributes": {
+        "name": "New Delhi",
+        "population": 257803
+      },
+      "relationships": {
+        "capital": {
+          "data": {
+            "type": "country",
+            "id": "Q668"
+          }
+        }
+      }
+    },
+    {
+      "type": "country",
+      "id": "Q30",
+      "attributes": {
+        "name": "United States Of America",
+        "population": 323952889
+      },
+      "relationships": {
+        "capital": {
+          "data": {
+            "type": "city",
+            "id": "Q61"
+          }
+        }
+      }
+    },
+    {
+      "type": "city",
+      "id": "Q61",
+      "attributes": {
+        "name": "Washington, D.C.",
+        "population": 693972
+      },
+      "relationships": {
+        "capital": {
+          "data": {
+            "type": "country",
+            "id": "Q30"
+          }
+        }
+      }
+    }
+  ]
+}

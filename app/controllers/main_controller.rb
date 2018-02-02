@@ -8,7 +8,7 @@ class MainController < ApplicationController
   end
 
   def example
-    @document = Document.new(JSON.parse(File.read('tmp/example.json')))
+    @document = Document.new(JSON.parse(File.read('doc/example.json')))
     render :document
   end
 end

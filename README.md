@@ -1,24 +1,37 @@
-# README
+# smooth-jsonapi-viewer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails application that renders [{json:api}](http://jsonapi.org/) documents in a easy-to-understand format. It includes `included` entities and color-codes entities by type.
 
-Things you may want to cover:
+![screenshot](doc/screenshot.png "Screenshot")
 
-* Ruby version
+## Installation
 
-* System dependencies
+##### Install Ruby
+If you're using Homebrew on OS X:
 
-* Configuration
+```
+brew install ruby
+```
 
-* Database creation
+Otherwise, refer to the [Ruby Installation Guide](https://www.ruby-lang.org/en/documentation/installation/).
 
-* Database initialization
+##### Install Bundler:
 
-* How to run the test suite
+```
+gem install bundler
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+##### Install the app:
 
-* Deployment instructions
+```
+git clone https://github.com/bagilevi/smooth-jsonapi-viewer
+cd smooth-jsonapi-viewer
+bundle install
+bundle exec rails server -p 4183
+```
 
-* ...
+## Usage
+
+Navigate to http://localhost:4183/example to view the example.
+
+Navigate to http://localhost:4183/ and paste your JSON.
